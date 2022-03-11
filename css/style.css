@@ -286,9 +286,10 @@ html body main article .mainBox {
   justify-content: space-between;
 }
 html body main article .mainBox .wrap {
-  width: 32.603%;
+  width: 34%;
   height: auto;
   background: #ffffff;
+  border-right: solid 1px #ededed;
 }
 html body main article .mainBox .wrap .title {
   width: 100%;

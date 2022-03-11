@@ -14,20 +14,37 @@ $(function(){
 
 $(function(){
     var mainList = $(".mainBox .bottom ul");
-    var mainList2 = window.innerHeight;
-    mainList.css("height", (String(mainList2 - 375) + "px"));
-    $(window).resize(function () {
-            var mainList = $(".mainBox .bottom ul");
-            var mainList2 = window.innerHeight;
-            mainList.css("height", (String(mainList2 - 375) + "px"));
-    });
-
     var leftNav = $(".leftSide .bottom ul");
-    var leftNav2 = window.innerHeight;
-    leftNav.css("height", (String(leftNav2 - 192) + "px"));
+    var wh = window.innerHeight;
+
+    mainList.css("height", (String(wh - 375) + "px"));
     $(window).resize(function () {
-            var leftNav = $(".leftSide .bottom ul");
-            var leftNav2 = window.innerHeight;
-            leftNav.css("height", (String(leftNav2 - 192) + "px"));
+        var mainList = $(".mainBox .bottom ul");
+        var wh = window.innerHeight;
+        mainList.css("height", (String(wh - 375) + "px"));
+    });
+    leftNav.css("height", (String(wh - 192) + "px"));
+    $(window).resize(function () {
+        var leftNav = $(".leftSide .bottom ul");
+        var wh = window.innerHeight;
+        leftNav.css("height", (String(wh - 192) + "px"));
     });
 });
+
+function isMobile() {
+
+    try{ document.createEvent("TouchEvent"); return true; }
+
+    catch(e){ return false;}
+
+}
+$(function(){
+   if(isMobile()){
+        var mainList = $(".mainBox .bottom ul");
+        var leftNav = $(".leftSide .bottom ul");
+        var wh = window.innerHeight / 4;
+
+        mainList.css("height", (String(wh) + "px"));
+        leftNav.css("height", (String(wh) + "px"));
+   }
+})

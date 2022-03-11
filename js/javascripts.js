@@ -15,11 +15,11 @@ $(function(){
 $(function(){
     var mainList = $(".mainBox .bottom ul");
     var mainList2 = window.innerHeight;
-    mainList.css("height", (String(mainList2 - 393) + "px"));
+    mainList.css("height", (String(mainList2 - 375) + "px"));
     $(window).resize(function () {
             var mainList = $(".mainBox .bottom ul");
             var mainList2 = window.innerHeight;
-            mainList.css("height", (String(mainList2 - 393) + "px"));
+            mainList.css("height", (String(mainList2 - 375) + "px"));
     });
 
     var leftNav = $(".leftSide .bottom ul");

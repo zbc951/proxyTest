@@ -46,5 +46,7 @@ $(function(){
 
         mainList.css("height", (String(wh) + "px"));
         leftNav.css("height", (String(wh) + "px"));
+
+        $(".mainBox .wrap").css("border-width","5px");
    }
 })

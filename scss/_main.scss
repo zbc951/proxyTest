@@ -171,7 +171,11 @@ html {
                         width: 34%;
                         height: auto;
                         background: $commonBG_1;
-                        border-right: solid 1px $mainBG_1;
+                        border-right: solid 3px $mainBG_1;
+
+                        &:last-child {
+                            border: none;
+                        }
 
                         .title {
                             width: 100%;

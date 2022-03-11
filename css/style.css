@@ -289,7 +289,10 @@ html body main article .mainBox .wrap {
   width: 34%;
   height: auto;
   background: #ffffff;
-  border-right: solid 1px #ededed;
+  border-right: solid 3px #ededed;
+}
+html body main article .mainBox .wrap:last-child {
+  border: none;
 }
 html body main article .mainBox .wrap .title {
   width: 100%;

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/javascripts.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <section class="center">
+            <p>代理管理修改</p>
+            <button>儲存設定</button>
+        </section>
+    </header>
+    <!--main-->
+    <main>
+        <nav class="leftSide">
+            <section class="top">
+                <div class="sticker"></div>
+                <div class="info">
+                    <p>
+                        代理帳號:
+                        <span>xxxx</span>
+                    </p>
+                    <p>
+                        名稱:
+                        <span>xxxx</span>
+                    </p>
+                </div>
+            </section>
+            <section class="bottom">
+                <ul>
+                    <li class="title">
+                        <p>球種選擇</p>
+                    </li>
+                    <li class="active">
+                        <i class="boxing"></i>
+                        <p>格鬥/拳擊</p>
+                    </li>
+                    <li>
+                        <i class="golf"></i>
+                        <p>高爾夫</p>
+                    </li>
+                    <li>
+                        <i class="badminton"></i>
+                        <p>羽球</p>
+                    </li>
+                    <li>
+                        <i class="tableball"></i>
+                        <p>桌球</p>
+                    </li>
+                    <li>
+                        <i class="volleyball"></i>
+                        <p>排球</p>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+        <article>
+            <section class="mainBox">
+                <div class="wrap">
+                    <p class="title">全場</p>
+                    <div class="top">
+                        <div class="inputBox">
+                            <p class="smallTitle">
+                                退水設定
+                            </p>
+                            <input type="text" placeholder="請輸入金額">
+                        </div>
+                        <div class="inputBox">
+                            <p class="smallTitle">
+                                單邊限額
+                            </p>
+                            <input type="text" placeholder="請輸入金額">
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p class="remind">
+                            <span>※</span>
+                            請勾選群組
+                        </p>
+                        <ul>
+                            <li class="active">
+                                <div class="inputBox">
+                                    <label class="active">
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>1 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注1000</p>
+                                    <p>單場3000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>2 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注2000</p>
+                                    <p>單場6000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>3 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注1500</p>
+                                    <p>單場3500</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>4 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注2500</p>
+                                    <p>單場7000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>5 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注3000</p>
+                                    <p>單場8000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>6 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注4000</p>
+                                    <p>單場9000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>7 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注4000</p>
+                                    <p>單場9000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>8 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注1200</p>
+                                    <p>單場4000</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <p class="title">上半場</p>
+                    <div class="top">
+                        <div class="inputBox">
+                            <p class="smallTitle">
+                                退水設定
+                            </p>
+                            <input type="text" placeholder="請輸入金額">
+                        </div>
+                        <div class="inputBox">
+                            <p class="smallTitle">
+                                單邊限額
+                            </p>
+                            <input type="text" placeholder="請輸入金額">
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p class="remind">
+                            <span>※</span>
+                            請勾選群組
+                        </p>
+                        <ul>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>1 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注1000</p>
+                                    <p>單場3000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>2 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注2000</p>
+                                    <p>單場6000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>3 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注1500</p>
+                                    <p>單場3500</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>4 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注2500</p>
+                                    <p>單場7000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>5 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注3000</p>
+                                    <p>單場8000</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <p class="title">走地</p>
+                    <div class="top">
+                        <div class="inputBox">
+                            <p class="smallTitle">
+                                退水設定
+                            </p>
+                            <input type="text" placeholder="請輸入金額">
+                        </div>
+                        <div class="inputBox">
+                            <p class="smallTitle">
+                                單邊限額
+                            </p>
+                            <input type="text" placeholder="請輸入金額">
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p class="remind">
+                            <span>※</span>
+                            請勾選群組
+                        </p>
+                        <ul>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>1 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注1000</p>
+                                    <p>單場3000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>2 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注2000</p>
+                                    <p>單場6000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>3 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注1500</p>
+                                    <p>單場3500</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>4 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注2500</p>
+                                    <p>單場7000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>5 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注3000</p>
+                                    <p>單場8000</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inputBox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <p>6 .</p>
+                                </div>
+                                <div class="wordBox">
+                                    <p>單注4000</p>
+                                    <p>單場9000</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="btnBox">
+                <button>儲存設定</button>
+            </section>
+        </article>
+    </main>
+    <!--bg-->
+    <div class="bg"></div>
+</body>
+</html>

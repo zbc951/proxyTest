@@ -1,0 +1,133 @@
+@media only screen and(max-width: 1400px){
+    html {
+
+        body {
+
+            header {
+                
+                .center {
+                    width: 100%;
+
+                    p {
+                        padding-left: 30px;
+                    }
+                }
+            }
+
+            main {
+                width: 100%;
+                min-width: 1000px;
+
+                article {
+
+                    .mainBox {
+
+                        .wrap {
+
+                            .top {
+
+                                .inputBox {
+
+                                    .smallTitle {
+                                        margin-right: 6.8%;
+                                    }
+
+                                    input {
+                                        width: 60%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 1260px){
+    html {
+
+        body {
+
+            main {
+
+                article {
+
+                    .mainBox {
+
+                        .wrap {
+
+                            .bottom {
+
+                                ul {
+
+                                    li {
+
+                                        .inputBox {
+
+                                            label {
+                                                margin: 0 15px;
+                                            }
+
+                                            p {
+                                                font-size: 24px;
+                                                margin-top: -3px;
+                                            }
+                                        }
+
+                                        .wordBox {
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            width: 60%;
+
+                                            p {
+
+                                                &:nth-of-type(1) {
+                                                    margin: 0 0 6px 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 1100px){
+    html {
+
+        body {
+
+            main {
+
+                article {
+
+                    .mainBox {
+
+                        .wrap {
+
+                            .bottom {
+
+                                ul {
+
+                                    li {
+
+                                        .wordBox {
+                                            width: 50%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,172 @@
+//header
+@mixin headerBG {
+    background: linear-gradient(to top,#1c4065 0%,#1e65a3 100%);
+    color: #ffffff;
+    font-weight: bold;
+}
+@mixin headerBtn {
+    background: linear-gradient(to top,#b1c0d1 0%,#e4eef8 100%);
+    border-radius: 30px;
+    border: solid 1px #182532;
+    box-shadow: 0 1px 5px 0 #00000070;
+    color: #1b1b1b;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    &:hover,&:active,&.active {
+        background: #0c263f;
+        border-color: #ffffff;
+        box-shadow: none;
+        color: #ffffff;
+    }
+}
+
+//leftSide
+@mixin sticker {
+    background: #183550;
+    border-radius: 3px;
+    border: solid 1px #3987cb;
+    box-sizing: border-box;
+}
+@mixin nav {
+    background: linear-gradient(to top,#8a9bac 0%,#6a7e90 26%,#9dadbd 88%,#afbed1 100%);
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #516170 transparent;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+    &:nth-of-type(1) {
+        background: linear-gradient(to top,#2f669d 0%,#668fb8 100%);
+        border-color: #a1bad3 transparent #ededed;
+        pointer-events: none;
+    }
+    &:nth-of-type(2) {
+        border-top: none;
+    }
+    &:last-child {
+        border-bottom-width: 2px;
+    }
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#295d8b 0%,#0c2640 88%,#295682 100%);
+        border-color: transparent;
+    }
+}
+
+//main
+$mainBG: #ededed;
+
+//通用
+$commonBG_1: #ffffff;
+
+$commonBorder_1: #c8c8c8;
+
+$title_1: #1b1b1b;
+
+$remind_1: #5e5e5e;
+$remind_2: #e34817;
+
+@mixin linearHeader {
+    background: linear-gradient(to top,#2f669d 0%,#668fb8 100%);
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+@mixin listBtn {
+    background: linear-gradient(to top,#e6ecf2 4%,#d2dbe5 17%,#f7fbff 100%);
+    border-radius: 30px;
+    border: solid 1px #b9c0c7;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f4776;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#224c74 0%,#0c263f 100%);
+        border-color: transparent;
+        color: #ffffff;
+    }
+}
+@mixin saveBtn {
+    background: linear-gradient(to top,#2f669d 0%,#668fb8 100%);
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#26517d 0%,#4f769e 100%);
+    }
+}
+
+@mixin commonInput {
+    background: #f2f2f2;
+    border-radius: 3px;
+    border: solid 1px #c8c8c8;
+    color: #1b1b1b;
+    padding-left: 15px;
+
+    &::placeholder {
+        color: #909090;
+    }
+
+    &:focus {
+        background: #ffffff;
+        border-color: #000000;
+    }
+}
+@mixin checkbox {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #a5b4c3;
+        border-radius: 50%;
+        box-shadow: 0 2px 0 0 #4a5159d2 inset;
+        border-bottom: solid 1px #ffffff;
+    }
+
+    &.active {
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 12px;
+            height: 12px;
+            background: #d0552e;
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+}
+
+//滑軸色
+$track: #9aaaba;
+$thumb: linear-gradient(to bottom,#275a87 0%,#0c2641 100%);

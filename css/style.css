@@ -1,0 +1,504 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+main {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+.leftSide .bottom i {
+  background: url("../images/navIC.png") no-repeat;
+  background-size: 500%;
+}
+
+.bg {
+  background: url("../images/bg.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: #ededed;
+}
+html ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+html ::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #9aaaba;
+}
+html ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #275a87 0%, #0c2641 100%);
+}
+html body {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+html body header {
+  width: 100%;
+  min-width: 1000px;
+  height: 66px;
+  background: linear-gradient(to top, #1c4065 0%, #1e65a3 100%);
+  color: #ffffff;
+  font-weight: bold;
+}
+html body header .center {
+  width: 1400px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+html body header .center p {
+  font-size: 24px;
+  margin-right: 20px;
+  letter-spacing: 3px;
+}
+html body header .center button {
+  width: 110px;
+  height: 35px;
+  background: linear-gradient(to top, #b1c0d1 0%, #e4eef8 100%);
+  border-radius: 30px;
+  border: solid 1px #182532;
+  box-shadow: 0 1px 5px 0 #00000070;
+  color: #1b1b1b;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+html body header .center button:hover, html body header .center button:active, html body header .center button.active {
+  background: #0c263f;
+  border-color: #ffffff;
+  box-shadow: none;
+  color: #ffffff;
+}
+html body main {
+  width: 1400px;
+  height: auto;
+  background: #ededed;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  margin: 0 auto;
+}
+html body main .leftSide {
+  width: 235px;
+  height: auto;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+html body main .leftSide .top {
+  width: 100%;
+  height: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  background: linear-gradient(to top, #1c4065 0%, #1e65a3 100%);
+  color: #ffffff;
+  font-weight: bold;
+}
+html body main .leftSide .top .sticker {
+  width: 64px;
+  height: 64px;
+  background: #183550;
+  border-radius: 3px;
+  border: solid 1px #3987cb;
+  box-sizing: border-box;
+}
+html body main .leftSide .top .info {
+  width: 147px;
+  height: 64px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+html body main .leftSide .top .info p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+html body main .leftSide .top .info p span {
+  padding-left: 3px;
+}
+html body main .leftSide .bottom {
+  width: 100%;
+  height: auto;
+}
+html body main .leftSide .bottom ul {
+  width: 100%;
+  height: auto;
+}
+html body main .leftSide .bottom ul li {
+  width: 100%;
+  height: 42px;
+  background: linear-gradient(to top, #8a9bac 0%, #6a7e90 26%, #9dadbd 88%, #afbed1 100%);
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #516170 transparent;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+html body main .leftSide .bottom ul li:nth-of-type(1) {
+  background: linear-gradient(to top, #2f669d 0%, #668fb8 100%);
+  border-color: #a1bad3 transparent #ededed;
+  pointer-events: none;
+}
+html body main .leftSide .bottom ul li:nth-of-type(2) {
+  border-top: none;
+}
+html body main .leftSide .bottom ul li:last-child {
+  border-bottom-width: 2px;
+}
+html body main .leftSide .bottom ul li:hover, html body main .leftSide .bottom ul li:active, html body main .leftSide .bottom ul li.active {
+  background: linear-gradient(to top, #295d8b 0%, #0c2640 88%, #295682 100%);
+  border-color: transparent;
+}
+html body main .leftSide .bottom ul li.title {
+  height: 30px;
+}
+html body main .leftSide .bottom ul li.title p {
+  padding-left: 10px;
+}
+html body main .leftSide .bottom ul li i {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 15px 0 10px;
+}
+html body main .leftSide .bottom ul li i.boxing {
+  background-position-x: 0;
+}
+html body main .leftSide .bottom ul li i.golf {
+  background-position-x: 25%;
+}
+html body main .leftSide .bottom ul li i.badminton {
+  background-position-x: 50%;
+}
+html body main .leftSide .bottom ul li i.tableball {
+  background-position-x: 75%;
+}
+html body main .leftSide .bottom ul li i.volleyball {
+  background-position-x: 100%;
+}
+html body main article {
+  width: 100%;
+  height: auto;
+}
+html body main article .mainBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+html body main article .mainBox .wrap {
+  width: 32.603%;
+  height: auto;
+  background: #ffffff;
+}
+html body main article .mainBox .wrap .title {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to top, #2f669d 0%, #668fb8 100%);
+  color: #ffffff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+html body main article .mainBox .wrap .top {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 1px #c8c8c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  flex-direction: column;
+}
+html body main article .mainBox .wrap .top .inputBox {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  justify-content: center;
+}
+html body main article .mainBox .wrap .top .inputBox .smallTitle {
+  font-size: 15px;
+  font-weight: bold;
+  color: #1b1b1b;
+  margin-right: 25px;
+  letter-spacing: 1px;
+}
+html body main article .mainBox .wrap .top .inputBox input {
+  width: 220px;
+  height: 32px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  border: solid 1px #c8c8c8;
+  color: #1b1b1b;
+  padding-left: 15px;
+}
+html body main article .mainBox .wrap .top .inputBox input::placeholder {
+  color: #909090;
+}
+html body main article .mainBox .wrap .top .inputBox input:focus {
+  background: #ffffff;
+  border-color: #000000;
+}
+html body main article .mainBox .wrap .bottom {
+  width: 100%;
+  min-height: 750px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 15px 20px;
+}
+html body main article .mainBox .wrap .bottom .remind {
+  font-size: 15px;
+  font-weight: bold;
+  color: #5e5e5e;
+  letter-spacing: 1px;
+}
+html body main article .mainBox .wrap .bottom .remind span {
+  color: #e34817;
+}
+html body main article .mainBox .wrap .bottom ul {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+html body main article .mainBox .wrap .bottom ul li {
+  width: 100%;
+  height: 55px;
+  background: linear-gradient(to top, #e6ecf2 4%, #d2dbe5 17%, #f7fbff 100%);
+  border-radius: 30px;
+  border: solid 1px #b9c0c7;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1f4776;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+html body main article .mainBox .wrap .bottom ul li:hover, html body main article .mainBox .wrap .bottom ul li:active, html body main article .mainBox .wrap .bottom ul li.active {
+  background: linear-gradient(to top, #224c74 0%, #0c263f 100%);
+  border-color: transparent;
+  color: #ffffff;
+}
+html body main article .mainBox .wrap .bottom ul li:hover label::before, html body main article .mainBox .wrap .bottom ul li:active label::before, html body main article .mainBox .wrap .bottom ul li.active label::before {
+  background: #ffffff !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+html body main article .mainBox .wrap .bottom ul li .inputBox {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 3px;
+  flex-shrink: 0;
+}
+html body main article .mainBox .wrap .bottom ul li .inputBox label {
+  position: relative;
+  margin: 0 20px;
+}
+html body main article .mainBox .wrap .bottom ul li .inputBox label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #a5b4c3;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 #4a5159d2 inset;
+  border-bottom: solid 1px #ffffff;
+}
+html body main article .mainBox .wrap .bottom ul li .inputBox label.active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background: #d0552e;
+  border-radius: 50%;
+  z-index: 1;
+}
+html body main article .mainBox .wrap .bottom ul li .inputBox label input {
+  opacity: 0;
+}
+html body main article .mainBox .wrap .bottom ul li .wordBox {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+html body main article .mainBox .wrap .bottom ul li .wordBox p {
+  letter-spacing: 2px;
+}
+html body main article .mainBox .wrap .bottom ul li .wordBox p:nth-of-type(1) {
+  margin-right: 6px;
+}
+html body main article .btnBox {
+  width: 100%;
+  height: 90px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+html body main article .btnBox button {
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(to top, #2f669d 0%, #668fb8 100%);
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+html body main article .btnBox button:hover, html body main article .btnBox button:active, html body main article .btnBox button.active {
+  background: linear-gradient(to bottom, #26517d 0%, #4f769e 100%);
+}
+html body .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+
+@media only screen and (max-width: 1400px) {
+  html body header .center {
+    width: 100%;
+  }
+  html body header .center p {
+    padding-left: 30px;
+  }
+  html body main {
+    width: 100%;
+    min-width: 1000px;
+  }
+  html body main article .mainBox .wrap .top .inputBox .smallTitle {
+    margin-right: 6.8%;
+  }
+  html body main article .mainBox .wrap .top .inputBox input {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1260px) {
+  html body main article .mainBox .wrap .bottom ul li .inputBox label {
+    margin: 0 15px;
+  }
+  html body main article .mainBox .wrap .bottom ul li .inputBox p {
+    font-size: 24px;
+    margin-top: -3px;
+  }
+  html body main article .mainBox .wrap .bottom ul li .wordBox {
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+  }
+  html body main article .mainBox .wrap .bottom ul li .wordBox p:nth-of-type(1) {
+    margin: 0 0 6px 0;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  html body main article .mainBox .wrap .bottom ul li .wordBox {
+    width: 50%;
+  }
+}

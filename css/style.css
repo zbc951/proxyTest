@@ -88,6 +88,11 @@ html, body {
   background-size: cover;
 }
 
+.leftSide .sticker div {
+  background: url("../images/sticker.png") no-repeat;
+  background-size: 100%;
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -182,6 +187,13 @@ html body main .leftSide .top .sticker {
   border-radius: 3px;
   border: solid 1px #3987cb;
   box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+html body main .leftSide .top .sticker div {
+  width: 51px;
+  height: 57px;
 }
 html body main .leftSide .top .info {
   width: 147px;
@@ -203,7 +215,7 @@ html body main .leftSide .bottom {
 }
 html body main .leftSide .bottom ul {
   width: 100%;
-  height: auto;
+  overflow-y: auto;
 }
 html body main .leftSide .bottom ul li {
   width: 100%;
@@ -333,7 +345,6 @@ html body main article .mainBox .wrap .top .inputBox input:focus {
 }
 html body main article .mainBox .wrap .bottom {
   width: 100%;
-  min-height: 750px;
   height: auto;
   box-sizing: border-box;
   padding: 15px 20px;
@@ -349,10 +360,10 @@ html body main article .mainBox .wrap .bottom .remind span {
 }
 html body main article .mainBox .wrap .bottom ul {
   width: 100%;
-  height: auto;
   margin-top: 15px;
   box-sizing: border-box;
   padding: 0 5px;
+  overflow-y: auto;
 }
 html body main article .mainBox .wrap .bottom ul li {
   width: 100%;
